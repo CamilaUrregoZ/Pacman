@@ -21,20 +21,7 @@ h1 {
   background-color: blue;
   border: 2px solid rgb(7, 7, 201);
 }
-.grid .dot {
-  background-color: black;
-  position: relative;
-}
-.grid .dot::after {
-  content: "";
-  position: absolute;
-  top: 40%;
-  left: 40%;
-  width: 6px;
-  height: 6px;
-  background-color: white;
-  border-radius: 50%;
-}
+
 
 .pacman {
   background-image: url(/ejercicio/img/Pacman.svg);
@@ -54,4 +41,19 @@ h1 {
   background-repeat: no-repeat;
   background-position: center;
   background-image: url(/ejercicio/img/ghost.png);
+}
+.grid div.dot {
+  background-color: transparent; /* Puntos de comida */
+  position: relative;
+}
+
+.grid div.dot::after {
+  content: "";
+  position: absolute;
+  top: 40%;
+  left: 40%;
+  width: 6px;
+  height: 6px;
+  background-color: white;
+  border-radius: 50%;
 }
